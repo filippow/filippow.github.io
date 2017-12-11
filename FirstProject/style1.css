@@ -213,3 +213,8 @@ footer {
 		width:auto;
 	}
 }
+@media (max-width:350px) {
+	.input {
+		width:250px;
+	}
+}
