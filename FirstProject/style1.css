@@ -2,50 +2,49 @@
 .container {
 	font-family:"PT Sans","Arial";
 	}			/*  СПЕЦИФИКАЦИЯ */
-.container a {
-	text-decoration:none;
-}
+
 ul {
 	list-style: none;
 }
 
-.container {
-	border:1px solid black;
-}
 
 					/* ПЕРВАЯ СЕКЦИЯ */
 .header {
-	background: #fcdb00;
-	
+	background: #fcdb00;	
 }
 .menu__item {
 	margin:50px 50px 70px 0;
+	transition-duration: 0.5s;
 }
-
 .menu__item a {
 	color:black;
 	font-size:22px;
 	font-weight:bold;
+	transition-duration: 1.5s;
+	text-transform: uppercase;
+}
+.menu__item:last-child a {
+	width:100px;
 }
 .menu__item a:hover {
 	color:#f18c14;
 	text-decoration:none;
+	transition-duration: 0.3s;
 }
-
 .logo {
 	margin:50px 0 0 30px;
-	
 }
-
 .block-left {
 	margin:70px 0 0 30px;
 }
 .icons * {
 	margin-right:10px;
 	color:black;
+	transition-duration: 1.5s;
 }
 .icons *:hover {
 	color:#f18c14;
+	transition-duration: 0.3s;
 }
 .block-left__title {
 	font-size:32px;
