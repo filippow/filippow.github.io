@@ -1,0 +1,71 @@
+
+/*  ПЕРВАЯ СТРАНИЦА    */
+
+
+@font-face {
+    font-family: Tall Films; /* Гарнитура шрифта */
+    src: url(../fonts/Tall_Film.ttf);
+}
+.main-photo {
+	font-family:"Tall Films", "Arial";
+	text-align:center;
+	padding-top:300px;
+	height:100vh;
+	width:1140px;
+	background: url("../img/first.jpg") 100% 100%;
+	background-repeat: no-repeat;	
+	background-size:cover;
+	box-sizing: border-box;
+}
+
+.main-photo h2 {
+	font-size:80px;
+	color:white;
+}
+
+.main-photo a {
+	font-size:46px;
+	line-height:50px;
+	color:white;
+}
+
+.main-photo a:hover {
+		text-decoration:none;
+		color:white;
+}
+.enter {
+	border-bottom:3px solid rgba(136,181,198,0.5);
+	width:100px;
+	margin:0 auto;
+	padding:0 15px;
+
+}
+.enter:hover {
+	border:2px solid rgba(136,181,198,0.8);
+	margin-top:-2px;
+	border-radius: 10px;
+	padding:0 15px;
+	transform:scale(1.3);
+	transition-duration: .5s;
+
+}
+.enter a {
+	color:white;
+	text-decoration:none;
+}
+.enter a:visited {
+	color:white;
+	text-decoration:none;
+}
+.enter a:active {
+	color:white;
+	text-decoration:none;
+}
+.enter a:hover {
+	color:white;
+	text-decoration:none;
+}
+.container-fluid {
+	background: #c7a194;
+	box-sizing: border-box;
+}
