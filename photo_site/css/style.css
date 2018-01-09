@@ -5,12 +5,9 @@
     font-family: Neogrey; /* Гарнитура шрифта */
     src: url(../fonts/NeogreyRegular.otf);
 }
-.container {
-	background: #fff;
-	
-}
+
 .container-fluid {
-	background: #c7a194;
+	background: linear-gradient(135deg,#bf9f52,#ae7d09,#584006,#f9d57f,#563f07,#dca82e,#a08137);
 }
 ul {
 	list-style:none;
@@ -39,20 +36,20 @@ ul a:hover {
 .menu li:hover {
 	color:#6f250c;
 	box-shadow: 0 0 5px 1px #6f250c;
-	transition-duration: 300ms;
-}
+	transition-duration: 300ms;}
+
 .menu li:hover a {
 	color:#6f250c;
-	font-weight:bold;
-}
+	font-weight:bold;}
+
 #cont_menu {
 	padding-top:40px;
 	margin:0 auto;
-	border-bottom:3px solid #5e5e5e;
-}
+	border-bottom:3px solid #5e5e5e;}
+
 .social {
-	margin-left:40px;
-}
+	margin-left:40px;}
+
 .social i {
 	margin-right:15px;
 	color: black;
@@ -60,8 +57,8 @@ ul a:hover {
 .social i:hover {
 	transform:scale(1.05);
 	color:#6f250c;
-	transition-duration: 0.3s;
-}
+	transition-duration: 0.3s;}
+
 .photo {
 	display:flex;
 	flex-wrap:wrap;
@@ -78,27 +75,29 @@ ul a:hover {
 	overflow: hidden;
 }
 .photo div:hover {
-		box-shadow: 0 0  5px 3px #6f250c;
-		
+		box-shadow: 0 0  5px 3px #6f250c;	
 }
 .photo img {
 	width:100%;
 	height:100%;
-	
 }
 .photo img:hover {
 	opacity:.8;
 	cursor:pointer;
 	transform:scale(1.05);
 	transition: opacity 100ms linear, transform 300ms linear;
-	
 }
+
+/* 				ОБО МНЕ                 */
+
+
 .body_slides{
     list-style:none;
     margin:0;
     padding:0;
     z-index:-2; 
     background:#000;}
+
 .body_slides,
 .body_slides:after{
     position: fixed;
@@ -107,12 +106,11 @@ ul a:hover {
     top:0px;
     left:0px;
 }
- 
 .body_slides li{
     width:100%;
     height:100%;
     position:absolute;
-    top:0;
+    top:0%;
     left:0;
     background-size:cover;
     background-repeat:none;
@@ -128,18 +126,154 @@ background-image: url("../img/about2.jpg")
 }
 .body_slides li:nth-child(3){
 -webkit-animation-delay: 12.0s;
-background-image: url("../img/about3.jpg") 
-}
+background-image: url("../img/about3.jpg") }
+
 @-webkit-keyframes anim_slides {
 0% {opacity:0;}
 6% {opacity:1;}
 24% {opacity:1;}
 30% {opacity:0;}
-100% {opacity:0;}
+100% {opacity:0;}}
+
+.info {
+	text-align:center;
+	color:#fff;
+	font-size:23px;
+	font-family:Neogrey, Arial;
+	line-height:60px;
+	margin-top:50px;
+}
+.info span {
+	text-decoration: underline;}
+
+.icon {
+	text-align:center;
+	cursor:pointer;
+	border:2px solid white;
+	border-radius: 25px;
+	width:30%;
+	padding:1% 3%;
+	margin:30px 0 30px 30px;
+	font-family:Neogrey, Arial;
+	font-size:40px;
+	color:#fff;
+	transition-duration: .5s;
+}
+.icon:hover {
+	transform:scale(0.9);
+	transition-duration: .5s;
+	box-shadow:  inset 0 0 10px 5px #c9c5c5;
+	border-color:#c9c5c5;
+	font-weight: bold;
 }
 
-.rest {
-	position:absolute;
+/*                  КОНТАКТЫ             */
+
+.cont {
+	padding-top:50px;
+	text-align: center;
+}
+.cont i {
+	color:#fff;
+	padding-left:15px;
+	transition-duration: .5s;
+}
+.cont a {
+	color:#fff;
+	font-size:45px;	
+}
+.cont a:hover {
+	color:#fff;
+	text-decoration: none;
+	transition-duration: .6s;
+}
+.icon_contacts {
+	color:#fff;
+	border-color:#fff;
+}
+.icon_contacts:hover {
+	box-shadow: inset 0 0 10px 5px #c0b7b3;
 }
 
+@keyframes animate_contacts {
+	0% {
+		background: url("../img/contacts1.jpg") 100% 100%;
+		background-size:cover;
+	}
+	10% {
+		background: url("../img/contacts1.jpg") 100% 100%;
+		background-size:cover;
+	}
 
+	20% {
+		background: url("../img/contacts2.jpg")100% 100%;
+		background-size:cover;
+	}
+	50% {
+		background: url("../img/contacts2.jpg")100% 100%;
+		background-size:cover;
+	}
+	
+	60% {
+		background: url("../img/contacts3.jpg")100% 100%;
+		background-size:cover;
+	}
+	90% {
+		background: url("../img/contacts3.jpg")100% 100%;
+		background-size:cover;
+	}
+	100% {
+		background: url("../img/contacts1.jpg")100% 100%;
+		background-size:cover;
+	}
+}
+.contacts{
+	animation:animate_contacts 20s linear infinite;
+	height:100vh;
+		padding:3% 0 10% 0;
+}
+.cont i:hover {
+	color:#6c311d;
+	transform:translateX(10px);
+	cursor:pointer;
+	transition-duration: .5s;
+}
+
+.fotorama {
+	margin-left:10%;
+}
+.people  {
+	padding:40px 0 50px 0;
+	background: linear-gradient(315deg,#bf9f52,#ae7d09,#584006,#efc766,#584006,#f7e3b3);
+}
+
+.galery_2 div {
+	width:23%;
+	height:450px;
+	box-sizing: border-box;	
+	margin:1%;
+	cursor:pointer;
+	overflow: hidden;
+	position:relative;
+	border:3px solid #603006;
+	background: black;
+	border-radius:20px;
+	}
+.galery_2 img {
+	width:110%;
+	height:110%;
+	position: absolute;
+	left:-13px;
+	top:-20px;
+	transition-duration: .5s;
+}
+.galery_2 img:hover {
+	opacity:0.65;
+	transform:scale(0.93);
+	transition-duration: .5s;
+}
+
+.galery_2 div:nth-child(2),
+.galery_2 div:nth-child(3) {
+	margin-top:30px;
+}
