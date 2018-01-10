@@ -1,35 +1,26 @@
-
-/*  ПЕРВАЯ СТРАНИЦА    */
-
-
 @font-face {
     font-family: Tall Films; /* Гарнитура шрифта */
     src: url(../fonts/Tall_Film.ttf);
 }
-.main-photo {
+.container-fluid {
 	font-family:"Tall Films", "Arial";
 	text-align:center;
-	padding-top:300px;
-	height:100vh;
-	width:1140px;
+	padding-top:200px;
 	background: url("../img/first.jpg") 100% 100%;
 	background-repeat: no-repeat;	
 	background-size:cover;
-	box-sizing: border-box;
+	height:100vh;
 }
-
-.main-photo h2 {
+.container-fluid h2 {
 	font-size:80px;
 	color:white;
 }
-
-.main-photo a {
+.container-fluid a {
 	font-size:46px;
 	line-height:50px;
 	color:white;
 }
-
-.main-photo a:hover {
+.container-fluid a:hover {
 		text-decoration:none;
 		color:white;
 }
@@ -38,7 +29,8 @@
 	width:100px;
 	margin:0 auto;
 	padding:0 15px;
-
+	animation-name: bounce;
+	animation-duration: 1.5s;
 }
 .enter:hover {
 	border:2px solid rgba(136,181,198,0.8);
@@ -47,7 +39,6 @@
 	padding:0 15px;
 	transform:scale(1.3);
 	transition-duration: .5s;
-
 }
 .enter a {
 	color:white;
@@ -65,7 +56,13 @@
 	color:white;
 	text-decoration:none;
 }
-.container-fluid {
-	background: #c7a194;
-	box-sizing: border-box;
+
+@keyframes bounce {  
+	 0% {
+		transform:translateY(-800%);
+		opacity: 0.5;
+	}
+	100% {
+		transform:translateY(0%);
+	}
 }
