@@ -24,30 +24,28 @@ ul a:hover {
 	color:black;
 }
 .menu {
-	text-align:center;
-	margin-bottom:0px;
-	padding-bottom: 0px;
-	margin-left:50px;
-
+	display:flex;
+	text-align: space-between;
+	margin-left:13%;
 }
 .menu li {
-	margin:0 auto;
-	padding: 5px 20px 1px 20px;
+	padding: 5px 5px 1px 5px;
 	border-radius: 5px;
+	cursor:pointer;
+	margin:0 2% 0 2%;
 }
 .menu li:hover {
 	color:#6f250c;
 	box-shadow: 0 0 5px 1px #6f250c;
-	transition-duration: 300ms;}
+	transition-duration: 500ms;}
 
 .menu li:hover a {
 	color:#6f250c;
 	font-weight:bold;}
 
 #cont_menu {
-	padding:15px 0;
+	padding:15px 0 10px 0;
 	margin:0 auto;
-	width:100%;
 	background: url("../img/bg.png");
 	border-bottom:3px solid #5e5e5e;
 	position:fixed;
