@@ -7,6 +7,7 @@
 }
 
 .container-fluid {
+	padding-top:90px;
 	background: url(../img/bg.png);
 }
 ul {
@@ -27,6 +28,7 @@ ul a:hover {
 	margin-bottom:0px;
 	padding-bottom: 0px;
 	margin-left:50px;
+
 }
 .menu li {
 	margin:0 auto;
@@ -43,9 +45,15 @@ ul a:hover {
 	font-weight:bold;}
 
 #cont_menu {
-	padding-top:40px;
+	padding:15px 0;
 	margin:0 auto;
-	border-bottom:3px solid #5e5e5e;}
+	width:100%;
+	background: url("../img/bg.png");
+	border-bottom:3px solid #5e5e5e;
+	position:fixed;
+	top:0;
+	left:0;
+	z-index: 9999;}
 
 .social {
 	margin-left:40px;}
