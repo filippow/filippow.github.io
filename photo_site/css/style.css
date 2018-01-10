@@ -126,15 +126,15 @@ ul a:hover {
     animation: anim_slides 18s linear infinite 0s;
 }
 .body_slides li:nth-child(1){
-background-image: url("../img/about1.jpg") 
+background-image: url("../img/about1-min.jpg") 
 }
 .body_slides li:nth-child(2){
 -webkit-animation-delay: 6.0s;
-background-image: url("../img/about2.jpg") 
+background-image: url("../img/about2-min.jpg") 
 }
 .body_slides li:nth-child(3){
 -webkit-animation-delay: 12.0s;
-background-image: url("../img/about3.jpg") }
+background-image: url("../img/about3-min.jpg") }
 
 @-webkit-keyframes anim_slides {
 0% {opacity:0;}
@@ -206,33 +206,33 @@ background-image: url("../img/about3.jpg") }
 
 @keyframes animate_contacts {
 	0% {
-		background: url("../img/contacts1.jpg") 100% 100%;
+		background: url("../img/contacts1-min.jpg") 100% 100%;
 		background-size:cover;
 	}
 	10% {
-		background: url("../img/contacts1.jpg") 100% 100%;
+		background: url("../img/contacts1-min.jpg") 100% 100%;
 		background-size:cover;
 	}
 
 	20% {
-		background: url("../img/contacts2.jpg")100% 100%;
+		background: url("../img/contacts2-min.jpg")100% 100%;
 		background-size:cover;
 	}
 	50% {
-		background: url("../img/contacts2.jpg")100% 100%;
+		background: url("../img/contacts2-min.jpg")100% 100%;
 		background-size:cover;
 	}
 	
 	60% {
-		background: url("../img/contacts3.jpg")100% 100%;
+		background: url("../img/contacts3-min.jpg")100% 100%;
 		background-size:cover;
 	}
 	90% {
-		background: url("../img/contacts3.jpg")100% 100%;
+		background: url("../img/contacts3-min.jpg")100% 100%;
 		background-size:cover;
 	}
 	100% {
-		background: url("../img/contacts1.jpg")100% 100%;
+		background: url("../img/contacts1-min.jpg")100% 100%;
 		background-size:cover;
 	}
 }
