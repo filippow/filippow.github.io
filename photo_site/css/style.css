@@ -7,7 +7,7 @@
 }
 
 .container-fluid {
-	background: linear-gradient(135deg,#bf9f52,#ae7d09,#584006,#f9d57f,#563f07,#dca82e,#a08137);
+	background: url(../img/bg.png);
 }
 ul {
 	list-style:none;
@@ -241,10 +241,12 @@ background-image: url("../img/about3.jpg") }
 
 .fotorama {
 	margin-left:10%;
+	
+	padding-top:30px;
 }
 .people  {
 	padding:40px 0 50px 0;
-	background: linear-gradient(315deg,#bf9f52,#ae7d09,#584006,#efc766,#584006,#f7e3b3);
+	background: url("../img/people/bg.png");
 }
 
 .galery_2 div {
@@ -276,4 +278,25 @@ background-image: url("../img/about3.jpg") }
 .galery_2 div:nth-child(2),
 .galery_2 div:nth-child(3) {
 	margin-top:30px;
+}
+
+
+.galery_nature div {
+	width:30%;
+	margin-left:2%;
+	margin-top:5%;
+}
+.galery_nature div:nth-child(2),
+.galery_nature div:nth-child(3) {
+	margin-top:5%;
+}
+.nature {
+	background:url("../img/nature/bg.png");
+	margin-top:-30px;
+	padding-bottom: 5%;
+}
+.nature .fotorama {
+	margin-left:0%;
+	box-shadow : 0 0 20px 15px gray;
+	
 }
